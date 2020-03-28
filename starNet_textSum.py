@@ -128,9 +128,9 @@ try:
 	starName = sys.argv[1]
 	starPort = int(sys.argv[2])
 	starPoCAddr = socket.gethostname()
-	starPoCPort = int(sys.argv[4])
+	starPoCPort = int(sys.argv[3])
 	print ("howd it ever work")
-	N_nodes = int(sys.argv[5])
+	N_nodes = int(sys.argv[4])
 	print ("")
 	print ("starName: " + str(starName)) 
 	print ("starPort: " + str(starPort)) 
@@ -1028,7 +1028,7 @@ def client():
 			f = open(date_cur)
 			contents = f.read()
 			f.close()
-			print (contents)
+			#print (contents)
 			summary_results = _run_article_summary(contents)
 			print (summary_results)
 
